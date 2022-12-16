@@ -28,7 +28,8 @@ p{
     display: flex;
     width: 100%;
     height: 100px;
-    background-color: cadetblue;
+    background: rgb(88,254,92);
+    background: linear-gradient(90deg, rgba(88,254,92,1) 0%, rgba(115,254,118,1) 32%, rgba(178,255,176,1) 100%);
     justify-content: space-between;
     align-items: center;
 }
@@ -95,8 +96,30 @@ p{
     left: 3px;
   }
 /* Кнопка меню */
-
 /* Шапка */
+
+
+/* h */
+h2{
+    text-align: center;
+    color: #000000af;
+    font-family: "Sourse Sans Pro", sans-serif;
+    padding: 20px 85px;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0px;
+    padding: 15px 0px;
+}
+h3{
+    color: #000000af;
+    font-family: "Sourse Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    margin-left: 2%;
+}
+/* h */
+
+
 .osn{
 width: 100%;
 height: 100%;
@@ -108,12 +131,12 @@ background-color: rgb(240, 240, 240);
     padding: 15px 30px;
 }
 .var{
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
     display: flex;
     position: relative;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     box-shadow: 0px 10px 5px 0px rgb(192, 192, 192);
-    border: 1px solid black;
     text-decoration: none;
     transition: 0.1s ease;
     top: 0px;
@@ -136,13 +159,14 @@ background-color: rgb(240, 240, 240);
 }
 .var:hover{
     position: relative;
-    background-color: rgb(139, 255, 255);
+    background-color: rgb(186, 255, 180);
     color: rgb(34, 34, 34);
     border-radius: 30px;
-    transition: 0.1s ease;
+    transition: 0.3s ease;
     box-sizing: 10px;
 }
 .plan{
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
     margin-left: 30px;
     width: auto;
     display: flex;
@@ -164,12 +188,6 @@ background-color: rgb(240, 240, 240);
     width: 92%;
     margin: 0% 4% 0% 4%;
 }
-/* .Number{
-    width: 220px;
-} */
-.task:active{
-    /* padding: 40px 40px; */
-}
 .task__a{
     display: flex;
     padding: 10px 10px;
@@ -184,6 +202,10 @@ background-color: rgb(240, 240, 240);
     transform: all 0.5s ease;
     transition-duration: 0.5s;
     width: 90px;
+}
+.task__a:active{
+    color: rgb(63, 0, 114);
+    transform: all 0.1s ease;
 }
 .task__sum:hover{
     background: rgb(215,215,215);
@@ -249,7 +271,6 @@ background-color: rgb(240, 240, 240);
     background-color: rgb(255, 255, 255);
     padding: 15px 30px 15px 33px;
     border-radius: 30px;
-    border: 1px solid black;
     text-decoration: none;
     align-items: center;
     font-size: 19px;
@@ -288,7 +309,7 @@ background-color: rgb(240, 240, 240);
 }
 .back__a:hover{
     position: relative;
-    background-color: rgb(139, 255, 255);
+    background-color: rgb(186, 255, 180);
     color: rgb(34, 34, 34);
     border-radius: 30px;
     transition: 0.1s ease;
